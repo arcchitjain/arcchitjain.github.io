@@ -1,0 +1,90 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+first_name: Arcchit
+last_name: Jain
+email: arcchit.jain@gmail.com
+description: > # this means to ignore newlines until "url:"
+  Ex: PhD Candidate, Artificial Intelligence, KU Leuven ; American Express ; IIT Kanpur
+footer_text: >
+  <a href="https://goo.gl/maps/N76admgskUNxN6rh7" target="_blank">94/192, Vijay Path, Mansarovar, Jaipur, India - 302020 <br>
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+
+show_news: true
+show_address: true
+ 
+url: "" # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/
+last_updated: 24 Feb 2021 # leave blank if you don't want to display last updated
+
+# -----------------------------------------------------------------------------
+# KU Leuven integration
+# -----------------------------------------------------------------------------
+ku_leuven_personnel_number: "0116049"
+
+teaching:
+- period: 2017-2020
+  course: <a href="https://onderwijsaanbod.kuleuven.be/syllabi/e/H02D2AE.htm" target="_blank">Uncertainty in Artificial Intelligence</a>
+  note: A course about probabilistic reasoning using Bayesian networks, statistical relational learning, and sampling for the students enrolled in the Master of Computer Science, and Master of Artificial Intelligence.
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+github_username: arcchitjain # your GitHub user name
+twitter_username: # your Twitter handle
+linkedin_username: arcchitjain # your LinkedIn user name
+scholar_userid: Yk3sqsQAAAAJ # your Google Scholar ID
+orcid_id: 0000-0002-4138-8887 # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+facebook_username: arcchitjain # your Facebook handle
+instagram_username: jainarcchit # your Instagram handle
+youtube_username: arcchitjain # your YouTube handle
+stackoverflow_userid: 8406160 # your Stack-Overflow user id
+
+contact_note: >
+  Feel free to reach me at firstname.lastname@gmail.com
+
+google_analytics: UA-170232003-1 # UA-XXXXXXXXX out your google-analytics code
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: news/:path/
+  projects:
+    output: true
+    permalink: projects/:path/
+
+news_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Build settings
+markdown: kramdown
+highlighter: rouge #pygments
+
+# Includes & excludes
+include: ['_pages']
+exclude: [vendor]
+
+# Plug-ins
+plugins:
+    - jekyll-email-protect
+    - jekyll-paginate
+    - jekyll/scholar
+    - jemoji
+
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.9.0"
+anchorjs_version: "3.2.2"
